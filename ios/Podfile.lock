@@ -217,6 +217,8 @@ PODS:
     - React-cxxreact (= 0.61.1)
     - React-jsi (= 0.61.1)
     - ReactCommon/jscallinvoker (= 0.61.1)
+  - RNGestureHandler (1.4.1):
+    - React
   - RNLocalize (1.2.1):
     - React
   - Yoga (1.14.0)
@@ -249,6 +251,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - ReactCommon/jscallinvoker (from `../node_modules/react-native/ReactCommon`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNLocalize (from `../node_modules/react-native-localize`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -305,6 +308,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNGestureHandler:
+    :path: "../node_modules/react-native-gesture-handler"
   RNLocalize:
     :path: "../node_modules/react-native-localize"
   Yoga:
@@ -336,6 +341,7 @@ SPEC CHECKSUMS:
   React-RCTText: 81b62b4e7f11531a5154e4daa5617670d5a2d5de
   React-RCTVibration: 8be61459e3749d1fb02cf414edd05b3007622882
   ReactCommon: 4fba5be89efdf0b5720e0adb3d8d7edf6e532db0
+  RNGestureHandler: 4cb47a93019c1a201df2644413a0a1569a51c8aa
   RNLocalize: 7206d44eb341d6e2a61a8184b831c64a5539fcdf
   Yoga: d8c572ddec8d05b7dba08e4e5f1924004a177078
 
