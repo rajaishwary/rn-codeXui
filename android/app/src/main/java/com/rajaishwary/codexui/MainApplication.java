@@ -1,4 +1,4 @@
-package com.reactnativechitui;
+package com.rajaishwary.codexui;
 
 import android.app.Application;
 import android.content.Context;

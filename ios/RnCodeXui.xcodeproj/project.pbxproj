@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* ReactNativeChitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeChitUITests.m */; };
-		0F35C0BD5EF3B680BE59E0A8 /* libPods-ReactNativeChitUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 818EB4C2951A02F962319CEB /* libPods-ReactNativeChitUITests.a */; };
+		00E356F31AD99517003FC87E /* RnCodeXuiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RnCodeXuiTests.m */; };
+		0F35C0BD5EF3B680BE59E0A8 /* libPods-RnCodeXuiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 818EB4C2951A02F962319CEB /* libPods-RnCodeXuiTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -16,10 +16,10 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* ReactNativeChitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeChitUITests.m */; };
-		72700671014D552A33027EA3 /* libPods-ReactNativeChitUI-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8D262AFB32E8EEB75DE285 /* libPods-ReactNativeChitUI-tvOSTests.a */; };
-		78E12DBD826AC20EF4A407E2 /* libPods-ReactNativeChitUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB94AA879F80FDA013AC1B7 /* libPods-ReactNativeChitUI.a */; };
-		B8B11BECCC1349C3018D5EC0 /* libPods-ReactNativeChitUI-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 814009F7D5D4A7B94237B2BE /* libPods-ReactNativeChitUI-tvOS.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* RnCodeXuiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RnCodeXuiTests.m */; };
+		72700671014D552A33027EA3 /* libPods-RnCodeXui-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8D262AFB32E8EEB75DE285 /* libPods-RnCodeXui-tvOSTests.a */; };
+		78E12DBD826AC20EF4A407E2 /* libPods-RnCodeXui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB94AA879F80FDA013AC1B7 /* libPods-RnCodeXui.a */; };
+		B8B11BECCC1349C3018D5EC0 /* libPods-RnCodeXui-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 814009F7D5D4A7B94237B2BE /* libPods-RnCodeXui-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,43 +28,43 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = ReactNativeChitUI;
+			remoteInfo = RnCodeXui;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "ReactNativeChitUI-tvOS";
+			remoteInfo = "RnCodeXui-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* ReactNativeChitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeChitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* RnCodeXuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RnCodeXuiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* ReactNativeChitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeChitUITests.m; sourceTree = "<group>"; };
-		1308D31FE8D2DFE6EE554518 /* Pods-ReactNativeChitUI-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeChitUI-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeChitUI-tvOSTests/Pods-ReactNativeChitUI-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* ReactNativeChitUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeChitUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactNativeChitUI/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ReactNativeChitUI/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* RnCodeXuiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RnCodeXuiTests.m; sourceTree = "<group>"; };
+		1308D31FE8D2DFE6EE554518 /* Pods-RnCodeXui-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnCodeXui-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RnCodeXui-tvOSTests/Pods-RnCodeXui-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* RnCodeXui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RnCodeXui.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RnCodeXui/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RnCodeXui/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeChitUI/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeChitUI/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeChitUI/main.m; sourceTree = "<group>"; };
-		1EB94AA879F80FDA013AC1B7 /* libPods-ReactNativeChitUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeChitUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E47B1E0B4A5D006451C7 /* ReactNativeChitUI-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactNativeChitUI-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* ReactNativeChitUI-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactNativeChitUI-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BA52F2FD3A04D23B8D7E185 /* Pods-ReactNativeChitUI-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeChitUI-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeChitUI-tvOSTests/Pods-ReactNativeChitUI-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		3D82F8185D2CF4691AAC065F /* Pods-ReactNativeChitUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeChitUI.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeChitUI/Pods-ReactNativeChitUI.release.xcconfig"; sourceTree = "<group>"; };
-		4081CD025B2DEDD2ADD68DBB /* Pods-ReactNativeChitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeChitUITests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeChitUITests/Pods-ReactNativeChitUITests.release.xcconfig"; sourceTree = "<group>"; };
-		814009F7D5D4A7B94237B2BE /* libPods-ReactNativeChitUI-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeChitUI-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		818EB4C2951A02F962319CEB /* libPods-ReactNativeChitUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeChitUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9585927B085AAC070F0D22A4 /* Pods-ReactNativeChitUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeChitUI.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeChitUI/Pods-ReactNativeChitUI.debug.xcconfig"; sourceTree = "<group>"; };
-		9586DCA01A840C31A8C30707 /* Pods-ReactNativeChitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeChitUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeChitUITests/Pods-ReactNativeChitUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D8D262AFB32E8EEB75DE285 /* libPods-ReactNativeChitUI-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeChitUI-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF2DFF93C78DE3FEF01D8ED3 /* Pods-ReactNativeChitUI-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeChitUI-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeChitUI-tvOS/Pods-ReactNativeChitUI-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		D5B6AF274BB68FF5283D4752 /* Pods-ReactNativeChitUI-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeChitUI-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeChitUI-tvOS/Pods-ReactNativeChitUI-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RnCodeXui/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RnCodeXui/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RnCodeXui/main.m; sourceTree = "<group>"; };
+		1EB94AA879F80FDA013AC1B7 /* libPods-RnCodeXui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RnCodeXui.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* RnCodeXui-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RnCodeXui-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* RnCodeXui-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RnCodeXui-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA52F2FD3A04D23B8D7E185 /* Pods-RnCodeXui-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnCodeXui-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-RnCodeXui-tvOSTests/Pods-RnCodeXui-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D82F8185D2CF4691AAC065F /* Pods-RnCodeXui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnCodeXui.release.xcconfig"; path = "Target Support Files/Pods-RnCodeXui/Pods-RnCodeXui.release.xcconfig"; sourceTree = "<group>"; };
+		4081CD025B2DEDD2ADD68DBB /* Pods-RnCodeXuiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnCodeXuiTests.release.xcconfig"; path = "Target Support Files/Pods-RnCodeXuiTests/Pods-RnCodeXuiTests.release.xcconfig"; sourceTree = "<group>"; };
+		814009F7D5D4A7B94237B2BE /* libPods-RnCodeXui-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RnCodeXui-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		818EB4C2951A02F962319CEB /* libPods-RnCodeXuiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RnCodeXuiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9585927B085AAC070F0D22A4 /* Pods-RnCodeXui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnCodeXui.debug.xcconfig"; path = "Target Support Files/Pods-RnCodeXui/Pods-RnCodeXui.debug.xcconfig"; sourceTree = "<group>"; };
+		9586DCA01A840C31A8C30707 /* Pods-RnCodeXuiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnCodeXuiTests.debug.xcconfig"; path = "Target Support Files/Pods-RnCodeXuiTests/Pods-RnCodeXuiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D8D262AFB32E8EEB75DE285 /* libPods-RnCodeXui-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RnCodeXui-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2DFF93C78DE3FEF01D8ED3 /* Pods-RnCodeXui-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnCodeXui-tvOS.release.xcconfig"; path = "Target Support Files/Pods-RnCodeXui-tvOS/Pods-RnCodeXui-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		D5B6AF274BB68FF5283D4752 /* Pods-RnCodeXui-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnCodeXui-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RnCodeXui-tvOS/Pods-RnCodeXui-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F35C0BD5EF3B680BE59E0A8 /* libPods-ReactNativeChitUITests.a in Frameworks */,
+				0F35C0BD5EF3B680BE59E0A8 /* libPods-RnCodeXuiTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78E12DBD826AC20EF4A407E2 /* libPods-ReactNativeChitUI.a in Frameworks */,
+				78E12DBD826AC20EF4A407E2 /* libPods-RnCodeXui.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8B11BECCC1349C3018D5EC0 /* libPods-ReactNativeChitUI-tvOS.a in Frameworks */,
+				B8B11BECCC1349C3018D5EC0 /* libPods-RnCodeXui-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72700671014D552A33027EA3 /* libPods-ReactNativeChitUI-tvOSTests.a in Frameworks */,
+				72700671014D552A33027EA3 /* libPods-RnCodeXui-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* ReactNativeChitUITests */ = {
+		00E356EF1AD99517003FC87E /* RnCodeXuiTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* ReactNativeChitUITests.m */,
+				00E356F21AD99517003FC87E /* RnCodeXuiTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = ReactNativeChitUITests;
+			path = RnCodeXuiTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* ReactNativeChitUI */ = {
+		13B07FAE1A68108700A75B9A /* RnCodeXui */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,20 +133,20 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = ReactNativeChitUI;
+			name = RnCodeXui;
 			sourceTree = "<group>";
 		};
 		14340D88B2FF7B08E262E3A7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9585927B085AAC070F0D22A4 /* Pods-ReactNativeChitUI.debug.xcconfig */,
-				3D82F8185D2CF4691AAC065F /* Pods-ReactNativeChitUI.release.xcconfig */,
-				D5B6AF274BB68FF5283D4752 /* Pods-ReactNativeChitUI-tvOS.debug.xcconfig */,
-				CF2DFF93C78DE3FEF01D8ED3 /* Pods-ReactNativeChitUI-tvOS.release.xcconfig */,
-				1308D31FE8D2DFE6EE554518 /* Pods-ReactNativeChitUI-tvOSTests.debug.xcconfig */,
-				3BA52F2FD3A04D23B8D7E185 /* Pods-ReactNativeChitUI-tvOSTests.release.xcconfig */,
-				9586DCA01A840C31A8C30707 /* Pods-ReactNativeChitUITests.debug.xcconfig */,
-				4081CD025B2DEDD2ADD68DBB /* Pods-ReactNativeChitUITests.release.xcconfig */,
+				9585927B085AAC070F0D22A4 /* Pods-RnCodeXui.debug.xcconfig */,
+				3D82F8185D2CF4691AAC065F /* Pods-RnCodeXui.release.xcconfig */,
+				D5B6AF274BB68FF5283D4752 /* Pods-RnCodeXui-tvOS.debug.xcconfig */,
+				CF2DFF93C78DE3FEF01D8ED3 /* Pods-RnCodeXui-tvOS.release.xcconfig */,
+				1308D31FE8D2DFE6EE554518 /* Pods-RnCodeXui-tvOSTests.debug.xcconfig */,
+				3BA52F2FD3A04D23B8D7E185 /* Pods-RnCodeXui-tvOSTests.release.xcconfig */,
+				9586DCA01A840C31A8C30707 /* Pods-RnCodeXuiTests.debug.xcconfig */,
+				4081CD025B2DEDD2ADD68DBB /* Pods-RnCodeXuiTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -157,10 +157,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				1EB94AA879F80FDA013AC1B7 /* libPods-ReactNativeChitUI.a */,
-				814009F7D5D4A7B94237B2BE /* libPods-ReactNativeChitUI-tvOS.a */,
-				9D8D262AFB32E8EEB75DE285 /* libPods-ReactNativeChitUI-tvOSTests.a */,
-				818EB4C2951A02F962319CEB /* libPods-ReactNativeChitUITests.a */,
+				1EB94AA879F80FDA013AC1B7 /* libPods-RnCodeXui.a */,
+				814009F7D5D4A7B94237B2BE /* libPods-RnCodeXui-tvOS.a */,
+				9D8D262AFB32E8EEB75DE285 /* libPods-RnCodeXui-tvOSTests.a */,
+				818EB4C2951A02F962319CEB /* libPods-RnCodeXuiTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,9 +175,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* ReactNativeChitUI */,
+				13B07FAE1A68108700A75B9A /* RnCodeXui */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* ReactNativeChitUITests */,
+				00E356EF1AD99517003FC87E /* RnCodeXuiTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				14340D88B2FF7B08E262E3A7 /* Pods */,
@@ -190,10 +190,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* ReactNativeChitUI.app */,
-				00E356EE1AD99517003FC87E /* ReactNativeChitUITests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* ReactNativeChitUI-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* ReactNativeChitUI-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* RnCodeXui.app */,
+				00E356EE1AD99517003FC87E /* RnCodeXuiTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* RnCodeXui-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* RnCodeXui-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* ReactNativeChitUITests */ = {
+		00E356ED1AD99517003FC87E /* RnCodeXuiTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactNativeChitUITests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RnCodeXuiTests" */;
 			buildPhases = (
 				E995CC50F455C468A2BEE9A8 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -215,14 +215,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = ReactNativeChitUITests;
-			productName = ReactNativeChitUITests;
-			productReference = 00E356EE1AD99517003FC87E /* ReactNativeChitUITests.xctest */;
+			name = RnCodeXuiTests;
+			productName = RnCodeXuiTests;
+			productReference = 00E356EE1AD99517003FC87E /* RnCodeXuiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* ReactNativeChitUI */ = {
+		13B07F861A680F5B00A75B9A /* RnCodeXui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeChitUI" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RnCodeXui" */;
 			buildPhases = (
 				F9B583F376C59AC25B560BD3 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -235,14 +235,14 @@
 			);
 			dependencies = (
 			);
-			name = ReactNativeChitUI;
-			productName = ReactNativeChitUI;
-			productReference = 13B07F961A680F5B00A75B9A /* ReactNativeChitUI.app */;
+			name = RnCodeXui;
+			productName = RnCodeXui;
+			productReference = 13B07F961A680F5B00A75B9A /* RnCodeXui.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* ReactNativeChitUI-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* RnCodeXui-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReactNativeChitUI-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RnCodeXui-tvOS" */;
 			buildPhases = (
 				6476E0D716CC92D759E49415 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -255,14 +255,14 @@
 			);
 			dependencies = (
 			);
-			name = "ReactNativeChitUI-tvOS";
-			productName = "ReactNativeChitUI-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* ReactNativeChitUI-tvOS.app */;
+			name = "RnCodeXui-tvOS";
+			productName = "RnCodeXui-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* RnCodeXui-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* ReactNativeChitUI-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* RnCodeXui-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReactNativeChitUI-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RnCodeXui-tvOSTests" */;
 			buildPhases = (
 				C5349AB739561664913A1179 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -274,9 +274,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "ReactNativeChitUI-tvOSTests";
-			productName = "ReactNativeChitUI-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* ReactNativeChitUI-tvOSTests.xctest */;
+			name = "RnCodeXui-tvOSTests";
+			productName = "RnCodeXui-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* RnCodeXui-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -303,7 +303,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeChitUI" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RnCodeXui" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -316,10 +316,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* ReactNativeChitUI */,
-				00E356ED1AD99517003FC87E /* ReactNativeChitUITests */,
-				2D02E47A1E0B4A5D006451C7 /* ReactNativeChitUI-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* ReactNativeChitUI-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* RnCodeXui */,
+				00E356ED1AD99517003FC87E /* RnCodeXuiTests */,
+				2D02E47A1E0B4A5D006451C7 /* RnCodeXui-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* RnCodeXui-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -402,7 +402,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactNativeChitUI-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RnCodeXui-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -424,7 +424,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactNativeChitUI-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RnCodeXui-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -446,7 +446,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactNativeChitUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RnCodeXuiTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,7 +468,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactNativeChitUI-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RnCodeXui-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -520,7 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* ReactNativeChitUITests.m in Sources */,
+				00E356F31AD99517003FC87E /* RnCodeXuiTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* ReactNativeChitUITests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* RnCodeXuiTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,12 +555,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* ReactNativeChitUI */;
+			target = 13B07F861A680F5B00A75B9A /* RnCodeXui */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* ReactNativeChitUI-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* RnCodeXui-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -572,7 +572,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = ReactNativeChitUI;
+			path = RnCodeXui;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -580,14 +580,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9586DCA01A840C31A8C30707 /* Pods-ReactNativeChitUITests.debug.xcconfig */;
+			baseConfigurationReference = 9586DCA01A840C31A8C30707 /* Pods-RnCodeXuiTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ReactNativeChitUITests/Info.plist;
+				INFOPLIST_FILE = RnCodeXuiTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -597,17 +597,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeChitUI.app/ReactNativeChitUI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RnCodeXui.app/RnCodeXui";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4081CD025B2DEDD2ADD68DBB /* Pods-ReactNativeChitUITests.release.xcconfig */;
+			baseConfigurationReference = 4081CD025B2DEDD2ADD68DBB /* Pods-RnCodeXuiTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = ReactNativeChitUITests/Info.plist;
+				INFOPLIST_FILE = RnCodeXuiTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -617,18 +617,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeChitUI.app/ReactNativeChitUI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RnCodeXui.app/RnCodeXui";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9585927B085AAC070F0D22A4 /* Pods-ReactNativeChitUI.debug.xcconfig */;
+			baseConfigurationReference = 9585927B085AAC070F0D22A4 /* Pods-RnCodeXui.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = ReactNativeChitUI/Info.plist;
+				INFOPLIST_FILE = RnCodeXui/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -636,18 +636,18 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = ReactNativeChitUI;
+				PRODUCT_NAME = RnCodeXui;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D82F8185D2CF4691AAC065F /* Pods-ReactNativeChitUI.release.xcconfig */;
+			baseConfigurationReference = 3D82F8185D2CF4691AAC065F /* Pods-RnCodeXui.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = ReactNativeChitUI/Info.plist;
+				INFOPLIST_FILE = RnCodeXui/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -655,14 +655,14 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = ReactNativeChitUI;
+				PRODUCT_NAME = RnCodeXui;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5B6AF274BB68FF5283D4752 /* Pods-ReactNativeChitUI-tvOS.debug.xcconfig */;
+			baseConfigurationReference = D5B6AF274BB68FF5283D4752 /* Pods-RnCodeXui-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -673,14 +673,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "ReactNativeChitUI-tvOS/Info.plist";
+				INFOPLIST_FILE = "RnCodeXui-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ReactNativeChitUI-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RnCodeXui-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -690,7 +690,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF2DFF93C78DE3FEF01D8ED3 /* Pods-ReactNativeChitUI-tvOS.release.xcconfig */;
+			baseConfigurationReference = CF2DFF93C78DE3FEF01D8ED3 /* Pods-RnCodeXui-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -701,14 +701,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "ReactNativeChitUI-tvOS/Info.plist";
+				INFOPLIST_FILE = "RnCodeXui-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ReactNativeChitUI-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RnCodeXui-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -718,7 +718,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1308D31FE8D2DFE6EE554518 /* Pods-ReactNativeChitUI-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 1308D31FE8D2DFE6EE554518 /* Pods-RnCodeXui-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -728,24 +728,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "ReactNativeChitUI-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "RnCodeXui-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ReactNativeChitUI-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RnCodeXui-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeChitUI-tvOS.app/ReactNativeChitUI-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RnCodeXui-tvOS.app/RnCodeXui-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BA52F2FD3A04D23B8D7E185 /* Pods-ReactNativeChitUI-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 3BA52F2FD3A04D23B8D7E185 /* Pods-RnCodeXui-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -755,17 +755,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "ReactNativeChitUI-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "RnCodeXui-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ReactNativeChitUI-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RnCodeXui-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeChitUI-tvOS.app/ReactNativeChitUI-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RnCodeXui-tvOS.app/RnCodeXui-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -872,7 +872,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactNativeChitUITests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RnCodeXuiTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -881,7 +881,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeChitUI" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RnCodeXui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -890,7 +890,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReactNativeChitUI-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RnCodeXui-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -899,7 +899,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReactNativeChitUI-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RnCodeXui-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -908,7 +908,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeChitUI" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RnCodeXui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
