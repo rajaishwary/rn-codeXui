@@ -1,9 +1,7 @@
-import injectReducer from './injectReducer';
-import injectSaga from './injectSaga';
+import withDyno from './withDyno';
 
 const utils = {
-    injectReducer,
-    injectSaga
+    withDyno
 }
 
 export default utils;
