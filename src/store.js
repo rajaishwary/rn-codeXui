@@ -1,33 +1,25 @@
-import { createStore, applyMiddleware, compose } from 'redux';
+import { createStore, compose } from 'redux'
 import { combineReducers } from 'redux-immutable';
-import { fromJS } from 'immutable';
-import createSagaMiddleware from 'redux-saga';
+import { applyMiddleware } from '@redux-dynostore/redux-subspace';
+import createSagaMiddleware from '@redux-dynostore/redux-subspace-saga';
+import dynostore, { dynamicReducers } from '@redux-dynostore/core';
+import { dynamicSagas } from '@redux-dynostore/redux-saga';
 
-const sagaMiddleware = createSagaMiddleware();
 
 const staticReducers = {
   navigation: require('./navigation/reducer').reducer,
-  // misc: require('./misc/redux').reducer,
+  misc: require('./misc/redux').reducer,
 };
 
-export default function configureStore(initialState = {}) {
-  const middlewares = [sagaMiddleware];
+const rootReducer = combineReducers(staticReducers);
+const sagaMiddleware = createSagaMiddleware()
 
-  const enhancers = [applyMiddleware(...middlewares)];
+const store = createStore(
+  rootReducer,
+  compose(
+    applyMiddleware(sagaMiddleware),
+    dynostore(dynamicReducers(), dynamicSagas(sagaMiddleware))
+  )
+);
 
-  const store = createStore(createReducer(), fromJS(initialState), compose(...enhancers));
-  store.runSaga = sagaMiddleware.run;
-  store.injectedReducers = {};
-  store.injectedSagas = {};
-
-  store.replaceReducer(createReducer(store.injectedReducers));
-  return store;
-}
-
-export function createReducer(injectedReducers) {
-  console.log('createReducer', injectedReducers);
-  return combineReducers({
-    ...staticReducers,
-    ...injectedReducers,
-  });
-}
+export default store;

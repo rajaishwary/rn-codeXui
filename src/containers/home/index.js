@@ -24,11 +24,10 @@ const mapStateToProps = createStructuredSelector({
   list: selectHomeList(),
 });
 const withConnect = connect(mapStateToProps);
-const withReducer = utils.injectReducer({ key: COMPONENT, reducer });
-const withSaga = utils.injectSaga({ key: COMPONENT, saga });
+const withDyno = utils.withDyno({ key: COMPONENT, reducer, saga });
+
 
 export default compose(
-  withReducer,
-  withSaga,
+  withDyno,
   withConnect,
 )(Home);
