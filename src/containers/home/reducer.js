@@ -1,11 +1,10 @@
-import { fromJS } from 'immutable';
 import { actionsTypes } from './actions';
 
-const initialState = fromJS({
+const initialState = {
   list: null,
   meta: null,
   loading: false
-});
+};
 
 function homeReducer(state = initialState, action) {
   switch (action.type) {

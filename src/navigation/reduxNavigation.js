@@ -7,19 +7,13 @@ import {
 } from 'react-navigation-redux-helpers';
 import { NavigationActions } from 'react-navigation';
 import { connect } from 'react-redux';
-import { createStructuredSelector, createSelector } from 'reselect';
 import AppNavigation from './appNavigation';
 
 export const navReducer = createNavigationReducer(AppNavigation);
-export const routerMiddleware = createReactNavigationReduxMiddleware(state => state.navigation);
-
+export const routerMiddleware = createReactNavigationReduxMiddleware(state => state.nav);
 const AppWithNavigationState = createReduxContainer(AppNavigation, 'root');
 
 class ReduxNavigation extends React.Component {
-  constructor(props, context) {
-    console.log(context);
-    super(props);
-  }
   componentDidMount() {
     BackHandler.addEventListener('hardwareBackPress', this.onBackPress);
   }
@@ -29,9 +23,9 @@ class ReduxNavigation extends React.Component {
   }
 
   onBackPress = () => {
-    const { navigation, dispatch } = this.props;
+    const { nav, dispatch } = this.props;
 
-    if (navigation.index === 0) {
+    if (nav.index === 0) {
       Alert.alert(
         'Exit',
         'Are you sure you want exit application ?',
@@ -54,16 +48,10 @@ class ReduxNavigation extends React.Component {
   };
 
   render() {
-    const { navigation, dispatch } = this.props;
-    console.log(navigation, 'selectMainNavigation');
-
-    return <AppWithNavigationState state={navigation} dispatch={dispatch} />;
+    const { nav, dispatch } = this.props;
+    return <AppWithNavigationState state={nav} dispatch={dispatch} />;
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    navigation: state.get('navigation').toJS()
-  };
-};
+const mapStateToProps = ({ nav }) => ({ nav });
 export default connect(mapStateToProps)(ReduxNavigation);

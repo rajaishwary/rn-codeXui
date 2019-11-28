@@ -1,25 +1,47 @@
-import { createStore, compose } from 'redux'
-import { combineReducers } from 'redux-immutable';
-import { applyMiddleware } from '@redux-dynostore/redux-subspace';
-import createSagaMiddleware from '@redux-dynostore/redux-subspace-saga';
-import dynostore, { dynamicReducers } from '@redux-dynostore/core';
-import { dynamicSagas } from '@redux-dynostore/redux-saga';
+import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
+import createSagaMiddleware from 'redux-saga';
+import { routerMiddleware } from './navigation/reduxNavigation';
+import rootSaga from './rootSaga';
 
+export const reducers = combineReducers({
+  navigation: require("./navigation/reducer").reducer,
+  home: require("./containers/home/reducer"),
+})
 
-const staticReducers = {
-  navigation: require('./navigation/reducer').reducer,
-  misc: require('./misc/redux').reducer,
+function configureStore(rootReducer, rootSaga) {
+  const middleware = [];
+  const enhancers = [];
+  middleware.push(routerMiddleware);
+  const sagaMonitor = null;
+  const sagaMiddleware = createSagaMiddleware({ sagaMonitor });
+  middleware.push(sagaMiddleware);
+  enhancers.push(applyMiddleware(...middleware));
+  const createAppropriateStore = createStore;
+  const store = createAppropriateStore(rootReducer, compose(...enhancers));
+  let sagasManager = sagaMiddleware.run(rootSaga);
+
+  return {
+    store,
+    sagasManager,
+    sagaMiddleware,
+  };
 };
 
-const rootReducer = combineReducers(staticReducers);
-const sagaMiddleware = createSagaMiddleware()
+export default () => {
+  let { store, sagasManager, sagaMiddleware } = configureStore(reducers, rootSaga)
 
-const store = createStore(
-  rootReducer,
-  compose(
-    applyMiddleware(sagaMiddleware),
-    dynostore(dynamicReducers(), dynamicSagas(sagaMiddleware))
-  )
-);
+  if (module.hot) {
+    module.hot.accept(() => {
+      const nextRootReducer = require('./')
+      store.replaceReducer(nextRootReducer)
 
-export default store;
+      const newYieldedSagas = require('./rootSaga').default
+      sagasManager.cancel()
+      sagasManager.done.then(() => {
+        sagasManager = sagaMiddleware.run(newYieldedSagas)
+      })
+    })
+  }
+
+  return store
+}
