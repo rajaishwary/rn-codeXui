@@ -1,7 +1,3 @@
-import withDyno from './withDyno';
-
-const utils = {
-    withDyno
-}
+const utils = {};
 
 export default utils;
