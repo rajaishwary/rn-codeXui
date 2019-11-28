@@ -14,13 +14,11 @@ class Home extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ home }) => {
   return {
-    list: state.home.list
-  }
+    list: home.list,
+  };
 };
 const withConnect = connect(mapStateToProps);
 
-export default compose(
-  withConnect,
-)(Home);
+export default compose(withConnect)(Home);

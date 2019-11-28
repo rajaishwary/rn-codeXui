@@ -4,8 +4,8 @@ import { routerMiddleware } from './navigation/reduxNavigation';
 import rootSaga from './rootSaga';
 
 export const reducers = combineReducers({
-  navigation: require("./navigation/reducer").reducer,
-  home: require("./containers/home/reducer"),
+  nav: require("./navigation/redux").reducer,
+  home: require("./containers/home/redux").reducer,
 })
 
 function configureStore(rootReducer, rootSaga) {
@@ -32,7 +32,7 @@ export default () => {
 
   if (module.hot) {
     module.hot.accept(() => {
-      const nextRootReducer = require('./')
+      const nextRootReducer = require('./').reducers
       store.replaceReducer(nextRootReducer)
 
       const newYieldedSagas = require('./rootSaga').default
