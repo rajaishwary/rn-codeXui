@@ -1,15 +1,13 @@
 import React from 'react';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
-import { View, Text } from 'react-native';
+import HomeView from './views';
 
 class Home extends React.Component {
   render() {
     console.log(this.props.list);
     return (
-      <View>
-        <Text>{'Home Container'}</Text>
-      </View>
+      <HomeView />
     );
   }
 }
