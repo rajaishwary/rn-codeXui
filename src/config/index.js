@@ -10,4 +10,5 @@ export const TestStream = {
 export default {
   allowTextFontScaling: false,
   API_URL,
+  textSelectable: true
 }

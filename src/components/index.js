@@ -1,4 +1,4 @@
-import Text from './RnText';
+import Text from './AppText';
 
 export {
     Text
