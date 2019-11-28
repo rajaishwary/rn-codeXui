@@ -14,3 +14,5 @@ class RootContainer extends React.Component {
 }
 
 export default RootContainer;
+
+console.disableYellowBox = true;
