@@ -3,11 +3,15 @@ import { View } from 'react-native';
 import { Text } from 'src/components';
 
 const RnView = () => {
-return (
-      <View>
-        <Text>{'Home Container'}</Text>
-      </View>
-    );
-}
+  return (
+    <View>
+      <Text style={'h1-regular-light'}>{'h1-regular-light'}</Text>
+      <Text style={'h1-regular-dark'}>{'h1-regular-dark'}</Text>
+      <Text style={'h2-regular-light'}>{'h2-regular-light'}</Text>
+      <Text style={'h3-bold-dark-primaryFontBold'}>{'h3-bold-dark-primaryFontBold'}</Text>
+      <Text style={'h3-bold-dark-primaryFontLight'}>{'h3-bold-dark-primaryFontLight'}</Text>
+    </View>
+  );
+};
 
 export default RnView;

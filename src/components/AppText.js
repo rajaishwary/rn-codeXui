@@ -1,6 +1,13 @@
 import React from 'react';
 import { Text } from 'react-native';
 import config from 'src/config';
+import { getTextStyles, defaultTextStyles } from 'src/theme/typography';
+
+/*
+text styles syntax:
+[fontsize-fontweight-color-fontfamily]
+eg. h1-regular-light,
+*/
 
 class AppText extends React.PureComponent {
   get text() {
@@ -34,9 +41,15 @@ class AppText extends React.PureComponent {
   }
 
   render() {
+    const styles = this.props.style && typeof this.props.style === 'string' ? getTextStyles(this.props.style) : {
+      ...this.props.style,
+      ...defaultTextStyles
+    };
+
     return (
       <Text
         {...this.props}
+        style={styles}
         accessible={true}
         accessibilityLabel={this.text}
         accessibilityRole={'text'}
