@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* RnCodeXuiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RnCodeXuiTests.m */; };
 		0F35C0BD5EF3B680BE59E0A8 /* libPods-RnCodeXuiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 818EB4C2951A02F962319CEB /* libPods-RnCodeXuiTests.a */; };
@@ -20,6 +19,9 @@
 		72700671014D552A33027EA3 /* libPods-RnCodeXui-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8D262AFB32E8EEB75DE285 /* libPods-RnCodeXui-tvOSTests.a */; };
 		78E12DBD826AC20EF4A407E2 /* libPods-RnCodeXui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB94AA879F80FDA013AC1B7 /* libPods-RnCodeXui.a */; };
 		B8B11BECCC1349C3018D5EC0 /* libPods-RnCodeXui-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 814009F7D5D4A7B94237B2BE /* libPods-RnCodeXui-tvOS.a */; };
+		9E74BC1777F5489398E18829 /* SulphurPoint-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC28376A95FB46D4A2E8A14D /* SulphurPoint-Bold.ttf */; };
+		231A01A905F942F1A9A59E4C /* SulphurPoint-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6A0F319A64C4D1698FA4979 /* SulphurPoint-Light.ttf */; };
+		5AD67A8B53854D849066DFF4 /* SulphurPoint-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9E98D4943424C8D89917664 /* SulphurPoint-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,9 @@
 		D5B6AF274BB68FF5283D4752 /* Pods-RnCodeXui-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnCodeXui-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RnCodeXui-tvOS/Pods-RnCodeXui-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		EC28376A95FB46D4A2E8A14D /* SulphurPoint-Bold.ttf */ = {isa = PBXFileReference; name = "SulphurPoint-Bold.ttf"; path = "../src/assets/fonts/SulphurPoint-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E6A0F319A64C4D1698FA4979 /* SulphurPoint-Light.ttf */ = {isa = PBXFileReference; name = "SulphurPoint-Light.ttf"; path = "../src/assets/fonts/SulphurPoint-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D9E98D4943424C8D89917664 /* SulphurPoint-Regular.ttf */ = {isa = PBXFileReference; name = "SulphurPoint-Regular.ttf"; path = "../src/assets/fonts/SulphurPoint-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +186,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				14340D88B2FF7B08E262E3A7 /* Pods */,
+				3FA5F718EF9C433FBB3B4EE0 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +203,17 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		3FA5F718EF9C433FBB3B4EE0 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				EC28376A95FB46D4A2E8A14D /* SulphurPoint-Bold.ttf */,
+				E6A0F319A64C4D1698FA4979 /* SulphurPoint-Light.ttf */,
+				D9E98D4943424C8D89917664 /* SulphurPoint-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -285,7 +302,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -338,6 +355,9 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				9E74BC1777F5489398E18829 /* SulphurPoint-Bold.ttf in Resources */,
+				231A01A905F942F1A9A59E4C /* SulphurPoint-Light.ttf in Resources */,
+				5AD67A8B53854D849066DFF4 /* SulphurPoint-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
