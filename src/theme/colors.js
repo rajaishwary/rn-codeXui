@@ -6,4 +6,5 @@ export const colors = {
     accent: '#FFC107',
     secondaryText: '#757575',
     divider: '#BDBDBD',
+    linearGradient: ['#009688', '#00d1be'],
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Text } from 'src/components';
+import { Text, LGradient } from 'src/components';
 
 const RnView = () => {
   return (
@@ -10,6 +10,13 @@ const RnView = () => {
       <Text style={'h2-regular-light'}>{'h2-regular-light'}</Text>
       <Text style={'h3-bold-dark-primaryFontBold'}>{'h3-bold-dark-primaryFontBold'}</Text>
       <Text style={'h3-bold-dark-primaryFontLight'}>{'h3-bold-dark-primaryFontLight'}</Text>
+      <LGradient style={{ width: 100, height: 50 }}>
+        <View style={{ width: 100, height: 50 }}>
+          <Text>
+            {'Check me out'}
+          </Text>
+        </View>
+      </LGradient>
     </View>
   );
 };
