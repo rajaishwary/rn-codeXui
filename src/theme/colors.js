@@ -7,4 +7,5 @@ export const colors = {
     secondaryText: '#757575',
     divider: '#BDBDBD',
     linearGradient: ['#009688', '#00d1be'],
+    disabled: '#f5f5f5',
 };
