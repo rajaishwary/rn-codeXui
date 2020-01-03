@@ -30,14 +30,14 @@ class AppText extends React.PureComponent {
       : {};
   }
 
-  get canCopyText() {
-    if (!config.textSelectable && !typeof this.props.selectable === 'boolean') {
-      return config.textSelectable;
-    }
+  get canCopyText() {    
     if (typeof this.props.selectable === 'boolean') {
       return this.props.selectable;
     }
-    return true;
+    if (config.textSelectable) {
+      return config.textSelectable;
+    }
+    return false;
   }
 
   render() {
