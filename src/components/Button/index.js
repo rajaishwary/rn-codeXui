@@ -30,7 +30,7 @@ class Button extends React.PureComponent {
   render() {
     const Btn = Platform.OS === 'android' ? TouchableNativeFeedback : TouchableOpacity;
     return (
-      <Btn {...this.platformSpecificProps}>
+      <Btn {...this.platformSpecificProps} onPress={this.props.onPress}>
         <View style={[this.btnContainerStyles, this.props.style]}>
           <Text style={{ ...this.btnTxtStyles, ...this.props.txtStyles }}>{'Button'}</Text>
         </View>
