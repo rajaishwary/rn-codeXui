@@ -20,7 +20,7 @@ export const colors = {
       text: '#FFF',
     },
     [buttonTypes.secondary]: {
-      background: '#757575',
+      background: '#ffce00',
       text: '#000',
     },
     [buttonTypes.outlined]: {

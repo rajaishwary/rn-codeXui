@@ -1,26 +1,35 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import { Text, LGradient, Button } from 'src/components';
+
+const Heading = ({ children }) => {
+  return (
+    <View style={{ marginVertical: 20 }}>
+      <Text style={'h3-bold-dark-primaryFontLight'}>{children}</Text>
+    </View>
+  );
+};
 
 const RnView = () => {
   return (
-    <View>
+    <ScrollView contentContainerStyle={{ marginHorizontal: 10 }}>
+      <Heading>{'Typography: '}</Heading>
       <Text style={'h1-regular-light'}>{'h1-regular-light'}</Text>
       <Text style={'h1-regular-dark'}>{'h1-regular-dark'}</Text>
       <Text style={'h2-regular-light'}>{'h2-regular-light'}</Text>
       <Text style={'h3-bold-dark-primaryFontBold'}>{'h3-bold-dark-primaryFontBold'}</Text>
       <Text style={'h3-bold-dark-primaryFontLight'}>{'h3-bold-dark-primaryFontLight'}</Text>
-      <LGradient style={{ width: 100, height: 50 }}>
-        <View style={{ width: 100, height: 50 }}>
-          <Text>
-            {'Check me out'}
-          </Text>
+      <Heading>{'Linear Gradient: '}</Heading>
+      <LGradient>
+        <View style={{ height: 50 }}>
+          <Text>{'Check me out'}</Text>
         </View>
-      </LGradient>   
-      <Button type={Button.type.primary}>
-        {'Click me'}  
-      </Button>   
-    </View>
+      </LGradient>
+      <Heading>{'Buttons: '}</Heading>
+      <Button type={Button.type.primary}>{'PRIMARY Btn'}</Button>
+      <Button type={Button.type.secondary}>{'SECONDARY Btn'}</Button>
+      <Button type={Button.type.outlined}>{'OUTLINED Btn'}</Button>
+    </ScrollView>
   );
 };
 

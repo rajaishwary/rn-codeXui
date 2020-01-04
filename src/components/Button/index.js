@@ -27,13 +27,18 @@ class Button extends React.PureComponent {
     return txtStyles[type];
   }
 
+  get btnText() {
+    const { children, text } = this.props;
+    if (Boolean(text)) return text;
+    if (Boolean(children)) return children;
+    return 'Submit';
+  }
+
   render() {
     const Btn = Platform.OS === 'android' ? TouchableNativeFeedback : TouchableOpacity;
     return (
-      <Btn {...this.platformSpecificProps} onPress={this.props.onPress}>
-        <View style={[this.btnContainerStyles, this.props.style]}>
-          <Text style={{ ...this.btnTxtStyles, ...this.props.txtStyles }}>{'Button'}</Text>
-        </View>
+      <Btn {...this.platformSpecificProps} style={[this.btnContainerStyles, this.props.style]} onPress={this.props.onPress}>
+        <Text style={{ ...this.btnTxtStyles, ...this.props.txtStyles }}>{this.btnText}</Text>
       </Btn>
     );
   }
