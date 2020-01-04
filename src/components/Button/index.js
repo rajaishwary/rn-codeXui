@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, TouchableOpacity, TouchableNativeFeedback, Platform } from 'react-native';
+import { TouchableOpacity, TouchableNativeFeedback, Platform } from 'react-native';
 import { Text } from 'src/components';
-import { colors } from 'src/theme/colors';
-import { containerStyles, txtStyles } from './styles';
+import { containerStyles, txtStyles, roundedStyles } from './styles';
 
 export const buttonTypes = {
   primary: 'PRIMARY',
   secondary: 'SECONDARY',
   outlined: 'OUTLINED',
+  danger: 'DANGER',
 };
 
 class Button extends React.PureComponent {
@@ -36,8 +36,10 @@ class Button extends React.PureComponent {
 
   render() {
     const Btn = Platform.OS === 'android' ? TouchableNativeFeedback : TouchableOpacity;
+    const btnStyles = [this.btnContainerStyles, this.props.style];
+    if (this.props.rounded) btnStyles.push(roundedStyles);
     return (
-      <Btn {...this.platformSpecificProps} style={[this.btnContainerStyles, this.props.style]} onPress={this.props.onPress}>
+      <Btn {...this.platformSpecificProps} style={btnStyles} onPress={this.props.onPress}>
         <Text style={{ ...this.btnTxtStyles, ...this.props.txtStyles }}>{this.btnText}</Text>
       </Btn>
     );
