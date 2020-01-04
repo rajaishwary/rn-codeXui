@@ -2,6 +2,7 @@ const buttonTypes = {
   primary: 'PRIMARY',
   secondary: 'SECONDARY',
   outlined: 'OUTLINED',
+  danger: 'DANGER',
 };
 
 export const colors = {
@@ -26,6 +27,10 @@ export const colors = {
     [buttonTypes.outlined]: {
       background: '#FFFFFF',
       text: '#000',
+    },
+    [buttonTypes.danger]: {
+      background: '#f63c3f',
+      text: '#FFF',
     },
   },
 };

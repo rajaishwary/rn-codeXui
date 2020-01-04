@@ -15,6 +15,11 @@ const commonTxtStyles = {
   fontWeight: '800'
 };
 
+const roundedStyles = {
+  height: 40,
+  borderRadius: 20
+}
+
 const containerStyles = StyleSheet.create({
   PRIMARY: {
     ...commonBtnStyles,
@@ -31,6 +36,10 @@ const containerStyles = StyleSheet.create({
     borderWidth: 2,
     borderColor: colors.button.OUTLINED.text,
   },
+  DANGER: {
+    ...commonBtnStyles,
+    backgroundColor: colors.button.DANGER.background,
+  }
 });
 
 const txtStyles = StyleSheet.create({
@@ -46,6 +55,10 @@ const txtStyles = StyleSheet.create({
     ...commonTxtStyles,
     color: colors.button.OUTLINED.text,
   },
+  DANGER: {
+    ...commonTxtStyles,
+    color: colors.button.DANGER.text,
+  },
 });
 
-export { containerStyles, txtStyles };
+export { containerStyles, txtStyles, roundedStyles };
