@@ -4,6 +4,7 @@ const { width, height } = Dimensions.get('window');
 export const dimensions = {
     width,
     height,
-    spacing1: 10,
-    spacing2: 20
+    spacing1: 5,
+    spacing2: 10,
+    spacing3: 20
 };

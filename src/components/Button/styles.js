@@ -4,15 +4,21 @@ import { colors } from 'src/theme/colors';
 import { dimensions } from 'src/theme/dimensions';
 
 const commonBtnStyles = {
-  width: dimensions.width / 2.5,
   justifyContent: 'center',
   alignItems: 'center',
-  padding: dimensions.spacing1,
+  padding: dimensions.spacing2,
+  margin: dimensions.spacing1,
+};
+
+const commonTxtStyles = {
+  fontSize: 20,
+  fontWeight: '800'
 };
 
 const containerStyles = StyleSheet.create({
   PRIMARY: {
     ...commonBtnStyles,
+    width: '60%',
     backgroundColor: colors.button.PRIMARY.background,
   },
   SECONDARY: {
@@ -22,17 +28,22 @@ const containerStyles = StyleSheet.create({
   OUTLINED: {
     ...commonBtnStyles,
     backgroundColor: colors.button.OUTLINED.background,
+    borderWidth: 2,
+    borderColor: colors.button.OUTLINED.text,
   },
 });
 
 const txtStyles = StyleSheet.create({
   PRIMARY: {
+    ...commonTxtStyles,
     color: colors.button.PRIMARY.text,
   },
   SECONDARY: {
+    ...commonTxtStyles,
     color: colors.button.SECONDARY.text,
   },
   OUTLINED: {
+    ...commonTxtStyles,
     color: colors.button.OUTLINED.text,
   },
 });
