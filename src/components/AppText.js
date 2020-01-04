@@ -42,8 +42,8 @@ class AppText extends React.PureComponent {
 
   render() {
     const styles = this.props.style && typeof this.props.style === 'string' ? getTextStyles(this.props.style) : {
-      ...this.props.style,
-      ...defaultTextStyles
+      ...defaultTextStyles,
+      ...this.props.style
     };
 
     return (
