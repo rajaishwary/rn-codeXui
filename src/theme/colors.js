@@ -19,18 +19,22 @@ export const colors = {
     [buttonTypes.primary]: {
       background: '#009688',
       text: '#FFF',
+      linearGradient: ['#009688', '#35d8c9']
     },
     [buttonTypes.secondary]: {
       background: '#ffce00',
       text: '#000',
+      linearGradient: ['#ffce00', '#ffe267']
     },
     [buttonTypes.outlined]: {
       background: '#FFFFFF',
       text: '#000',
+      linearGradient: ['#FFFFFF', '#e4e4e4']
     },
     [buttonTypes.danger]: {
       background: '#f63c3f',
       text: '#FFF',
+      linearGradient: ['#f63c3f', '#ff696b']
     },
   },
 };

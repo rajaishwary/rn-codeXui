@@ -1,7 +1,8 @@
 import React from 'react';
-import { TouchableOpacity, TouchableNativeFeedback, Platform } from 'react-native';
-import { Text } from 'src/components';
-import { containerStyles, txtStyles, roundedStyles } from './styles';
+import { View, TouchableOpacity, TouchableNativeFeedback, Platform, StyleSheet } from 'react-native';
+import { Text, LGradient } from 'src/components';
+import { commonBtnStyles, containerStyles, txtStyles, roundedStyles, lgStyles } from './styles';
+import { colors } from 'src/theme/colors';
 
 export const buttonTypes = {
   primary: 'PRIMARY',
@@ -34,13 +35,29 @@ class Button extends React.PureComponent {
     return 'Submit';
   }
 
+  get extraBtnSpecs() {
+    const { linearGradient } = this.props;
+    const type = this.props.type || buttonTypes.primary;
+    const btn = <Text style={{ ...this.btnTxtStyles, ...this.props.txtStyles }}>{this.btnText}</Text>;
+    if (Boolean(linearGradient)) {
+      return (
+        <LGradient style={StyleSheet.flatten([commonBtnStyles, { width: '100%', margin: 0 }])} colors={colors.button[type].linearGradient}>
+          <View>{btn}</View>
+        </LGradient>
+      );
+    }
+    return btn;
+  }
+
   render() {
+    const { rounded, linearGradient } = this.props;
     const Btn = Platform.OS === 'android' ? TouchableNativeFeedback : TouchableOpacity;
-    const btnStyles = [this.btnContainerStyles, this.props.style];
-    if (this.props.rounded) btnStyles.push(roundedStyles);
+    let btnStyles = StyleSheet.flatten([this.btnContainerStyles, this.props.style]);
+    if (rounded) btnStyles = StyleSheet.flatten([btnStyles, roundedStyles]);
+    if (linearGradient) btnStyles = StyleSheet.flatten([btnStyles, lgStyles]);
     return (
       <Btn {...this.platformSpecificProps} style={btnStyles} onPress={this.props.onPress}>
-        <Text style={{ ...this.btnTxtStyles, ...this.props.txtStyles }}>{this.btnText}</Text>
+        {this.extraBtnSpecs}
       </Btn>
     );
   }

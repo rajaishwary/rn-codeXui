@@ -4,6 +4,7 @@ import { colors } from 'src/theme/colors';
 import { dimensions } from 'src/theme/dimensions';
 
 const commonBtnStyles = {
+  minHeight: 50,
   justifyContent: 'center',
   alignItems: 'center',
   padding: dimensions.spacing2,
@@ -16,8 +17,13 @@ const commonTxtStyles = {
 };
 
 const roundedStyles = {
-  height: 40,
-  borderRadius: 20
+  height: 50,
+  borderRadius: 25
+}
+
+const lgStyles = {
+  backgroundColor: 'transparent',
+  padding: 0,
 }
 
 const containerStyles = StyleSheet.create({
@@ -61,4 +67,4 @@ const txtStyles = StyleSheet.create({
   },
 });
 
-export { containerStyles, txtStyles, roundedStyles };
+export { commonBtnStyles, containerStyles, txtStyles, roundedStyles, lgStyles };

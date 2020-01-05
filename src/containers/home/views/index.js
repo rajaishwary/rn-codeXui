@@ -27,9 +27,21 @@ const RnView = () => {
       </LGradient>
       <Heading>{'Buttons: '}</Heading>
       <Button type={Button.type.primary}>{'PRIMARY Btn'}</Button>
+      <Button linearGradient type={Button.type.primary}>
+        {'PRIMARY Btn'}
+      </Button>
       <Button type={Button.type.secondary}>{'SECONDARY Btn'}</Button>
-      <Button type={Button.type.outlined}>{'OUTLINED Btn'}</Button>
+      <Button linearGradient type={Button.type.secondary}>
+        {'SECONDARY Btn'}
+      </Button>
+      <Button rounded type={Button.type.outlined}>
+        {'OUTLINED Btn'}
+      </Button>
+      <Button linearGradient type={Button.type.outlined}>
+        {'OUTLINED Btn'}
+      </Button>
       <Button rounded type={Button.type.danger} text="DANGER Btn" />
+      <Button linearGradient type={Button.type.danger} text="DANGER Btn" />
     </ScrollView>
   );
 };
