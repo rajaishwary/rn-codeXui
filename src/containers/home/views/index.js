@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, ScrollView } from 'react-native';
-import { Text, LGradient, Button } from 'src/components';
+import { View, ScrollView, StyleSheet } from 'react-native';
+import { Text, LGradient, Button, Card } from 'src/components';
 
 const Heading = ({ children }) => {
   return (
@@ -11,6 +11,7 @@ const Heading = ({ children }) => {
 };
 
 const RnView = () => {
+  console.log(Button.type);
   return (
     <ScrollView contentContainerStyle={{ marginHorizontal: 10 }}>
       <Heading>{'Typography: '}</Heading>
@@ -42,8 +43,37 @@ const RnView = () => {
       </Button>
       <Button rounded type={Button.type.danger} text="DANGER Btn" />
       <Button linearGradient type={Button.type.danger} text="DANGER Btn" />
+      <Heading>{'Cards: '}</Heading>
+      <Card
+        title={'Hey i am Primary Card'}
+        ImageUrl={'https://picsum.photos/700'}
+        subText={'These properties can be accessed on Card by using the dot notation, e.g. Card.Content.'}
+        cardTitleStyles={styles.cardTitle}
+        cardSubTextStyles={styles.cardSubText}
+        type={'primary'}
+      />
+      <Card
+        title={'card without Image'}
+        subText={'These properties can be accessed on Card by using the dot notation, e.g. Card.Content.'}        
+      />
+      <Card
+        title={'Hey i am flatCard'}
+        subText={'These properties can be accessed on Card by using the dot notation, e.g. Card.Content.'}
+        type={'flatCard'}
+      />
+      <Text>{'card with only Image:'}</Text>
+      <Card ImageUrl={'https://picsum.photos/700'} type={'cover'} />
     </ScrollView>
   );
 };
 
 export default RnView;
+
+export const styles = StyleSheet.create({
+  cardTitle: {
+    color: 'red',
+  },
+  cardSubText: {
+    color: 'green',
+  },
+});

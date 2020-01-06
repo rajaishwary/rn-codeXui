@@ -1,9 +1,11 @@
 import Text from './AppText';
 import LGradient from './LGradient';
 import Button from './Button';
+import Card from './Card';
 
 export {
     Text,
     LGradient,
-    Button
+    Button,
+    Card
 }
