@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
-import { Text, LGradient, Button, Card } from 'src/components';
+import { Text, LGradient, Button, Card, Chip } from 'src/components';
 
 const Heading = ({ children }) => {
   return (
@@ -59,6 +59,9 @@ const RnView = () => {
       />
       <Text>{'card with only Image:'}</Text>
       <Card ImageUrl={'https://picsum.photos/700'} type={'cover'} />
+      <Chip type={'flat'}>Simple</Chip>
+      <Chip type={'outLined'} text={'Simple'} />
+      <Chip type={'outLined'} disabled text={'Simple'} />
     </ScrollView>
   );
 };
