@@ -2,7 +2,6 @@ import { StyleSheet } from 'react-native';
 import { colors } from 'src/theme/colors';
 import { dimensions } from 'src/theme/dimensions';
 
-
 const styles = StyleSheet.create({
   commonTitle: {
     fontSize: 22,
@@ -14,6 +13,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: '#000',
   },
+  primaryImage: { width: dimensions.width, height: dimensions.height / 3, backgroundColor: colors.disabled, minHeight: dimensions.height / 3},
 });
 
 const containerStyle = StyleSheet.create({
@@ -37,11 +37,13 @@ const containerStyle = StyleSheet.create({
     borderColor: 'rgba(0,0,0,0.2)',
     marginVertical: 10,
   },
-  cover:{
-      width:'100%',
-      height: dimensions.height / 3,
-      borderRadius:10
-  }
+  cover: {
+    width: '100%',
+    height: dimensions.height / 3,
+    borderRadius: 10,
+    backgroundColor: colors.disabled,
+  },
+  
 });
 
 export { containerStyle, styles };
