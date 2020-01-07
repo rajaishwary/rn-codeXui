@@ -31,7 +31,7 @@ class Card extends Component {
     const { ImageUrl, type } = this.props;
     if (Boolean(ImageUrl) && type === 'primary') {
       return (
-        <Image source={{ uri: `${ImageUrl}` }} resizeMode={'cover'} style={{ width: width, height: height / 3 }} />
+        <Image source={{ uri: `${ImageUrl}` }} resizeMode={'cover'} style={styles.primaryImage} />
       );
     } else if (type === 'cover' && ImageUrl) {
       return <Image source={{ uri: `${ImageUrl}` }} resizeMode={'cover'} style={containerStyle[this.props.type]} />;
