@@ -15,6 +15,9 @@ export const colors = {
   divider: '#BDBDBD',
   linearGradient: ['#009688', '#00d1be'],
   disabled: '#f5f5f5',
+  lightGray:'#EBEBEB',
+  white:'#FFFFFF',
+  black:'#000000',
   button: {
     [buttonTypes.primary]: {
       background: '#009688',
