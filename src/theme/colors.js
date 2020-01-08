@@ -18,6 +18,7 @@ export const colors = {
   lightGray:'#EBEBEB',
   white:'#FFFFFF',
   black:'#000000',
+  darkSilver:'#6c6c6c',
   button: {
     [buttonTypes.primary]: {
       background: '#009688',
