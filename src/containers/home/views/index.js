@@ -62,10 +62,13 @@ const RnView = () => {
         type={'flatCard'}
       />
       <Text>{'card with only Image:'}</Text>
-      <Card ImageUrl={'https://picsum.photos/700'} type={'cover'} />
-      <Chip type={'flat'}>Simple</Chip>
-      <Chip type={'outLined'} text={'Simple'} />
-      <Chip type={'outLined'} disabled text={'Simple'} />
+      <Card ImageUrl={'https://picsum.photos/700'} type={'cover'} />    
+      <View style={{flexDirection:'row', flexWrap:'wrap', justifyContent:'space-evenly'}}>
+      <Chip type={'flat'}>{'i am flat chip'}</Chip>
+      <Chip type={'outLined'} text={'i am Outlined chip'} />
+      <Chip type={'outLined'} disabled text={'i am outlined disabled chip'}/>
+      <Chip type={'outLined'} text={'i am Close icon chip(Outlined)'} onClick />
+      </View>
     </ScrollView>
   );
 };

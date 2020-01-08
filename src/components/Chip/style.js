@@ -16,11 +16,7 @@ const chipStyle = StyleSheet.create({
     ...commonStyle,
     borderWidth: 0.5,
     borderColor: 'rgba(0,0,0,0.5)',
-  },
-  disabled: {
-    ...commonStyle,
-    backgroundColor:colors.lightGray,
-  },
+  }
 });
 
 const txtStyle = StyleSheet.create({
@@ -33,9 +29,6 @@ const txtStyle = StyleSheet.create({
     color: colors.black,
     fontSize: 16,
     textAlign:'center'
-  },
-  disabled:{
-      color:colors.disabled
   }
 });
 
