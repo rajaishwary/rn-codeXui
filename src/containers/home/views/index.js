@@ -11,7 +11,6 @@ const Heading = ({ children }) => {
 };
 
 const RnView = () => {
-  console.log(Button.type);
   return (
     <ScrollView contentContainerStyle={{ marginHorizontal: 10 }}>
       <Heading>{'Typography: '}</Heading>
@@ -52,10 +51,7 @@ const RnView = () => {
         cardSubTextStyles={styles.cardSubText}
         type={'primary'}
       />
-      <Card
-        title={'card without Image'}
-        subText={'These properties can be accessed on Card by using the dot notation, e.g. Card.Content.'}        
-      />
+      <Card title={'card without Image'} subText={'These properties can be accessed on Card by using the dot notation, e.g. Card.Content.'} />
       <Card
         title={'Hey i am flatCard'}
         subText={'These properties can be accessed on Card by using the dot notation, e.g. Card.Content.'}
