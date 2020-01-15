@@ -1,13 +1,19 @@
 import React, { PureComponent } from 'react';
 import { View, TouchableOpacity } from 'react-native';
 import Share from 'react-native-share';
-​
+
+const IMAGES = [
+  'https://s.ftcdn.net/v2013/pics/all/curated/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg?r=1a0fc22192d0c808b8bb2b9bcfbf4a45b1793687',
+  'https://s.ftcdn.net/v2013/pics/all/curated/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg?r=1a0fc22192d0c808b8bb2b9bcfbf4a45b1793687',
+  'https://s.ftcdn.net/v2013/pics/all/curated/RKyaEDwp8J7JKeZWQPuOVWvkUjGQfpCx_cover_580.jpg?r=1a0fc22192d0c808b8bb2b9bcfbf4a45b1793687',
+];
+
 class WAShareWrapper extends PureComponent {
   constructor(props) {
     super(props);
     this.allImgsOfCategory = [];
   }
-​
+
   setImages = async (base64, arrLength = 0) => {
     const { successCallback } = this.props;
     this.allImgsOfCategory = [...this.allImgsOfCategory, base64];
@@ -25,21 +31,17 @@ class WAShareWrapper extends PureComponent {
     }
     return;
   };
-​
+
   multipleShareOnWhatsapp = async category_url => {
     try {
       const { initCallback } = this.props;
       initCallback && initCallback();
-      const urlKey = category_url;
-      const productList  = {};
-      
-      const currentListOfProducts = productList[urlKey] || [];
-      const promiseArray = currentListOfProducts.slice(0, 10).reduce((acc, cur) => {
-        let imgUrl = cur.images && cur.images[0].url;
+
+      const imgPromiseArr = IMAGES.reduce((acc, imgUrl) => {
         acc.push(fetch(imgUrl));
         return acc;
       }, []);
-      await Promise.all(promiseArray)
+      await Promise.all(imgPromiseArr)
         .then(async allRes => {
           for await (let imgs of allRes) {
             (async () => {
@@ -48,10 +50,7 @@ class WAShareWrapper extends PureComponent {
               reader.readAsDataURL(b);
               reader.onloadend = async function() {
                 const base64data = reader.result;
-                const convert = base64data.replace(
-                  'data:application/octet-stream;',
-                  'data:image/png;'
-                );
+                const convert = base64data.replace('data:application/octet-stream;', 'data:image/png;');
                 this.setImages(convert, promiseArray.length);
               }.bind(this);
             })();
@@ -78,5 +77,5 @@ class WAShareWrapper extends PureComponent {
     );
   }
 }
-​
+
 export default WAShareWrapper;
