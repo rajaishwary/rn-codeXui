@@ -11,22 +11,22 @@ const IMAGES = [
 class WAShareWrapper extends PureComponent {
   constructor(props) {
     super(props);
-    this.allImgsOfCategory = [];
+    this.imagesBase64Arr = [];
   }
 
-  setImages = async (base64, arrLength = 0) => {
-    const { successCallback } = this.props;
-    this.allImgsOfCategory = [...this.allImgsOfCategory, base64];
-    if (this.allImgsOfCategory.length === arrLength) {
-      successCallback && successCallback();
+  setImages = async (base64Img, arrLength = 0) => {
+    const { successCb } = this.props;
+    this.imagesBase64Arr = [...this.imagesBase64Arr, base64Img];
+    if (this.imagesBase64Arr.length === arrLength) {
+      successCb && successCb();
       const shareOptions = {
         title: 'Share via',
-        urls: this.allImgsOfCategory,
+        urls: this.imagesBase64Arr,
         social: Share.Social.WHATSAPP,
         failOnCancel: false,
       };
       await Share.shareSingle(shareOptions);
-      this.allImgsOfCategory = [];
+      this.imagesBase64Arr = [];
       return;
     }
     return;
@@ -34,8 +34,8 @@ class WAShareWrapper extends PureComponent {
 
   multipleShareOnWhatsapp = async category_url => {
     try {
-      const { initCallback } = this.props;
-      initCallback && initCallback();
+      const { initCb } = this.props;
+      initCb && initCb();
 
       const imgPromiseArr = IMAGES.reduce((acc, imgUrl) => {
         acc.push(fetch(imgUrl));
@@ -50,21 +50,21 @@ class WAShareWrapper extends PureComponent {
               reader.readAsDataURL(b);
               reader.onloadend = async function() {
                 const base64data = reader.result;
-                const convert = base64data.replace('data:application/octet-stream;', 'data:image/png;');
-                this.setImages(convert, promiseArray.length);
+                const updatedBase64Png = base64data.replace('data:application/octet-stream;', 'data:image/png;');
+                this.setImages(updatedBase64Png, imgPromiseArr.length);
               }.bind(this);
             })();
           }
         })
         .catch(e => {
           console.log(e);
-          const { errorCallBack } = this.props;
-          errorCallBack && errorCallBack();
+          const { errorCb } = this.props;
+          errorCb && errorCb();
         });
     } catch (e) {
       console.log(e);
-      const { errorCallBack } = this.props;
-      errorCallBack && errorCallBack();
+      const { errorCb } = this.props;
+      errorCb && errorCb();
     }
   };
 
