@@ -14,10 +14,6 @@ export const buttonTypes = {
 class Button extends React.PureComponent {
   static type = buttonTypes;
 
-  get platformSpecificProps() {
-    return Platform.OS === 'android' ? { background: TouchableNativeFeedback.SelectableBackground() } : {};
-  }
-
   get btnContainerStyles() {
     const type = this.props.type || buttonTypes.primary;
     return containerStyles[type];
@@ -38,27 +34,31 @@ class Button extends React.PureComponent {
   get extraBtnSpecs() {
     const { linearGradient } = this.props;
     const type = this.props.type || buttonTypes.primary;
-    const btn = <Text style={{ ...this.btnTxtStyles, ...this.props.txtStyles }}>{this.btnText}</Text>;
     if (Boolean(linearGradient)) {
       return (
-        <LGradient style={StyleSheet.flatten([commonBtnStyles, { width: '100%', margin: 0 }])} colors={colors.button[type].linearGradient}>
-          <View>{btn}</View>
+        <LGradient style={StyleSheet.flatten([commonBtnStyles])} colors={colors.button[type].linearGradient}>
+          <View>
+            <Text style={{ ...this.btnTxtStyles, ...this.props.txtStyles }}>{this.btnText}</Text>
+          </View>
         </LGradient>
       );
     }
-    return btn;
+    return (
+      <View style={StyleSheet.flatten([this.btnContainerStyles, commonBtnStyles])}>
+        <Text style={{ ...this.btnTxtStyles, ...this.props.txtStyles }}>{this.btnText}</Text>
+      </View>
+    );
   }
 
   render() {
     const { rounded, linearGradient } = this.props;
-    const Btn = Platform.OS === 'android' ? TouchableNativeFeedback : TouchableOpacity;
     let btnStyles = StyleSheet.flatten([this.btnContainerStyles, this.props.style]);
     if (rounded) btnStyles = StyleSheet.flatten([btnStyles, roundedStyles]);
     if (linearGradient) btnStyles = StyleSheet.flatten([btnStyles, lgStyles]);
     return (
-      <Btn {...this.platformSpecificProps} style={btnStyles} onPress={this.props.onPress}>
+      <TouchableNativeFeedback background={TouchableNativeFeedback.SelectableBackground()} style={btnStyles} onPress={this.props.onPress}>
         {this.extraBtnSpecs}
-      </Btn>
+      </TouchableNativeFeedback>
     );
   }
 }
