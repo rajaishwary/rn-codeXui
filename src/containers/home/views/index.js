@@ -1,6 +1,12 @@
 import React from 'react';
 import { View, ScrollView, StyleSheet } from 'react-native';
-import { Text, LGradient, Button, Card, Chip } from 'src/components';
+import { Text, LGradient, Button, Card, Chip, NavList } from 'src/components';
+
+const data = [
+  { id: 0, name: 'name 1', route: '', params: null },
+  { id: 1, name: 'name 2', route: '', params: null },
+  { id: 2, name: 'name 3', route: '', params: null }
+];
 
 const Heading = ({ children }) => {
   return (
@@ -13,6 +19,8 @@ const Heading = ({ children }) => {
 const RnView = () => {
   return (
     <ScrollView contentContainerStyle={{ marginHorizontal: 10 }}>
+      <Heading>{'NavList: '}</Heading>
+      <NavList list={data} />
       <Heading>{'Typography: '}</Heading>
       <Text style={'h1-regular-light'}>{'h1-regular-light'}</Text>
       <Text style={'h1-regular-dark'}>{'h1-regular-dark'}</Text>
